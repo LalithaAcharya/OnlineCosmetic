@@ -1,0 +1,25 @@
+<div class="trending">
+	<div id="trendingslide">
+		<img class="one" src="https://res.cloudinary.com/admitad-gmbh/image/upload/v1645293370/cb1ttnaxqxciadtkpkcm.jpg" width="100%" /> 
+		<img class="two" src="https://www.lakmesalon.in/sk-eu/content/dam/brands/lakme/india/1560314-lakme-salon-offer-march-new.png.rendition.1960.1960.png" width="80%" height="800px" />
+		<img class="three" src="https://www.dealsshutter.com/uploads/social_images/brands/capture-1550038052.JPG"/>
+	</div>
+</div>
+
+<div class="productLayout">
+	<div class="layout" *ngFor="let bestdeals of bestdeals">
+	  <div class="card">
+		<div class="imgBx">
+		  <img class="image" src="{{bestdeals.image}}">
+		</div>
+		<div class="contentBx">
+		  <h2>{{bestdeals.name}}</h2>
+		  <p class="views">{{bestdeals.discount}}</p>
+		  <div class="color">
+			<h3>Color : {{bestdeals.color}}</h3>
+		  </div>
+		  <a routerLink="/bestdeals/{{bestdeals.id}}">View Product</a>
+		</div>
+	  </div>
+	</div>
+  </div>

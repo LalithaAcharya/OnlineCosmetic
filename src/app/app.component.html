@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<nav id="flex1">
+
+
+  <div class="searchbox">
+    <input type="text" placeholder="Search...">
+    <div class="search"></div>
+  </div>  
+   <p class="one">|</p>
+   <p class="text"><i class="fa fa-heart-o" style="font-size:25px;"></i></p>
+   <p class="one">|</p>
+   <p routerLink="addtocart" class="text"><i class="fa fa-cart-plus" style="font-size:25px;"></i>    </p>
+</nav>
+
+<nav id="flex2">
+  <div class="d1">
+    <div class="contain">
+      <div class="row">
+        <div class="col-md-12 text-center">
+  <h1 class="two1 lakme">GLOSSY</h1>
+  </div>
+  </div>
+  </div>
+</div>
+<div class="d2">
+ <a (click)="changeView" routerLink=""> <p  class="two">HOME</p></a>
+  <div class="dropdown">
+      <p class="two">MAKEUP</p>&nbsp;
+      <div class="content">
+        <br><a routerLink="lips" class="p1">LIPS</a><br><br>
+          <a routerLink="eyes" class="p2">EYES</a><br><br>
+          <a routerLink="nails" class="p3">NAILS</a><br><br>
+          <a routerLink="face" class="p4">FACE</a><br><br>
+      </div>
+  </div>
+  <div class="dropdown">
+      <p class="two">SKIN</p>&nbsp;
+      <div class="content1">
+        <br><p routerLink="moisturise" class="p1">MOISTURISER</p><br>
+          <p routerLink="sunscreen" class="p2">SUNSCREEN</p><br>
+          <p routerLink="serum" class="p3">SERUM</p><br>
+          <p routerLink="cleanser" class="p5">FACE CLEANSER & REMOVERS</p>
+      </div>
+  </div>
+  <a routerLink="trendingnow"><p class="two">TRENDING NOW</p></a>
+  <a routerLink="bestdeals"><p class="two">BEST DEALS</p></a>
+  <a href="#"><p class="two">DISCOVER</p></a>
+  <a routerLink="trends"><p class="two">TRENDS</p></a>&nbsp;
+  </div>
+  <div class="d3">
+      <p routerLink="login" class="two"><i class="fas fa-user-circle"></i>ACCOUNT</p>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<app-slides *ngif="view"></app-slides>
+
+<app-footer></app-footer>

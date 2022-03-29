@@ -1,0 +1,26 @@
+<div class="lips">
+    <div id="lipsslide">
+      <img class="one" src="https://i.pinimg.com/originals/70/92/c0/7092c072ff9bbb09e2e724affd48d3a4.jpg" width="100%" /> 
+      <img class="two" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Beauty/MayART/BrandDay/AMZMASLK0520284_1_N_3125X1563_36fc3a98-e10e-4da4-b7e9-d1b6e0806119.jpg" />
+      <img class="three" src="http://4.bp.blogspot.com/-ncAT_xZpFzQ/U0bzKyFopjI/AAAAAAAAO24/u8em9UidDyE/s1600/Eyeconic+Bolt+of+Blue.jpg"/>
+    </div>
+  </div>
+
+<div class="productLayout">
+    <div class="layout" *ngFor="let eye of eyes">
+      <div class="card">
+        <div class="imgBx">
+          <img class="image" src="{{eye.image}}">
+        </div>
+        <div class="contentBx">
+          <h2>{{eye.name}}</h2>
+          <p class="views">{{eye.discount}}</p>
+          <!-- <div class="color">
+            <h3>Color : {{face.color}}</h3>
+          </div> -->
+          <a routerLink="/eye/{{eye.id}}">VIEW MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+

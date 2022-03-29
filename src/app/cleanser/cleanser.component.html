@@ -1,0 +1,26 @@
+
+  <div class="lips">
+    <div id="lipsslide">
+      <img class="one" src="https://i.ytimg.com/vi/YSLcpIpSfWQ/maxresdefault.jpg" width="100%" /> 
+      <img class="two" src="http://cdn.shopify.com/s/files/1/0014/3514/0183/collections/facewash.png?v=1606484711" />
+      <img class="three" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZpusZF3VancZrSai-qIkkj3c_yAjamiExLu9MATaRK08Sf0G8ARPSJ6CvebLwfkEWQo&usqp=CAU"/>
+    </div>
+  </div>
+
+<div class="productLayout">
+  <div class="layout" *ngFor="let cleanser of cleanser">
+    <div class="card">
+      <div class="imgBx">
+        <img class="image" src="{{cleanser.image}}">
+      </div>
+      <div class="contentBx">
+        <h2>{{cleanser.name}}</h2>
+        <p class="views">{{cleanser.discount}}</p>
+        <div class="color">
+          <h3>Color : {{cleanser.color}}</h3>
+        </div>
+        <a routerLink="/cleanser/{{cleanser.id}}">View Product</a>
+      </div>
+    </div>
+  </div>
+</div>

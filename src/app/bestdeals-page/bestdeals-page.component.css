@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+
+
+h1 {
+  color: black;
+  font-family: "muli";
+  font-weight: bold;
+  font-size: 3em;
+  margin-top: -10px;
+  display: inline-block;
+  margin-left:-90px;
+}
+
+.details{
+  margin-left:-40px;
+  margin-top:20px;
+  width:400px;
+}
+
+h3 {
+  color: #ffffff;
+  font-family: "muli";
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h2 {
+  color: black;
+  font-family: "muli";
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 29px;
+  line-height: 80px;
+}
+
+h4 {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "muli";
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h4.dis {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "muli";
+  font-weight: 400;
+  font-size: 17px;
+  margin-left: 30px;
+  text-decoration: line-through #ea3201;
+}
+
+h4.dis span {
+  text-decoration: line-through #ea3201;
+}
+
+.discount {
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+ul li {
+  color: #ffffff;
+  font-family: "muli";
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+
+/*shoe slider indicator*/
+
+/*main card*/
+
+.card {
+  display: flex;
+  align-items: center;
+  /* background:url(https://cdn.pixabay.com/photo/2019/11/11/22/07/space-4619637_960_720.jpg)
+    no-repeat;
+    background-size: cover; */
+    /* background: transparent; */
+  height: 600px;
+  width: 80%;
+  margin-left: 100px;
+  /* box-shadow: 0px 15px 50px 10px rgba(235, 145, 205, 0.4); */
+  margin-top: 2%;
+}
+
+.left {
+  content: "";
+  height: 555px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  /* background-image: linear-gradient(to left, #fbf5f6, #eacad4, #d5a0b9, #b978a5, #985396); */
+  background-image: linear-gradient(to left top, #f32578, #f7658a, #f891a0, #f4b7bc, #ebdcdc);
+  margin-left: 93px;
+  border-radius: 50px 50% 50% 50px;
+  position: absolute;
+  z-index: 5;
+}
+
+.middle {
+    content: "";
+    height: 150px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    /* background-image: linear-gradient(to left, #fbf5f6, #eacad4, #d5a0b9, #b978a5, #985396); */
+    background-image: linear-gradient(to left top, #f32578, #f7658a, #f891a0, #f4b7bc, #ebdcdc);
+    margin-left: 455px;
+    margin-top: 375px;
+    border-radius: 50% 0px 50px 50%;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .middle button{
+      width:160px;
+      height:50px;
+      border-radius: 20px;
+      background-color: #ea3201;
+      margin-top: -5px;
+      margin-left: 105px;
+  }
+  .middle button:hover{
+      background-color: #000000;
+      color:red;
+  }
+
+.left img {
+  margin-left: -18px;
+  margin-top: 20px;
+  transform: rotate(-25deg);
+}
+.left img:hover{
+    transform: rotate(25deg);
+}
+
+.right {
+  content: "";
+  height: 525px;
+  width: 900px;
+  /* background-color: #2a2f40; */
+  /* background-image: url(https://cdn.pixabay.com/photo/2019/11/11/22/07/space-4619637_960_720.jpg); */
+  background-image: linear-gradient(to left top, #d56889, #df597c, #e7476d, #ee315c, #f30948);
+  z-index: 3;
+  margin-left: 300px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.product-info {
+  position: absolute;
+  margin-left: 345px;
+  margin-top:50px;
+  height: 394px;
+  width: 550px;
+  z-index: 10;
+}
+.product-name{
+    margin-left:300px;
+}
+
+.lakme1
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #58d31f 0%,
+    #ffff 29%,
+    #dce46c 67%,
+    #ffff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+

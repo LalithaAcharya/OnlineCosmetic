@@ -1,0 +1,68 @@
+<div id="wrapper">
+	<div class="container1">
+		<div class="order">
+			<h2>Your order summary</h2>
+			<div class="item"  *ngFor="let cartItem of cart.items">
+				<img src='{{cartItem.lip.image}}' width="100px" height="100px" alt=''>
+				<div class="info">
+					<h4>{{cartItem.lip.name}}</h4>
+					<p class="quantity">Quantity: 1</p>
+					<p class="price">{{cartItem.lip.price}}</p>
+				</div> <!-- .info -->
+			</div> <!-- .item -->
+			
+			<h4 class="ship">Shipping: FREE</h4>
+			<hr>
+			<h3 class="total">TOTAL: {{cart.totalPrice}}</h3>
+		</div> <!-- .order -->
+	</div> <!-- .container1 -->
+	
+	<div class="container2">
+		<div class="checkout">
+			<div class="payment">
+				<div class="content">
+					<div class="infos">
+						<div class="method">
+							<h2>Choose a payment method</h2>
+							<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1978060/visa.png' alt='' class="visa">
+							<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1978060/mastercard.png' alt='' class="mastercard">
+							<img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1978060/paypal.png' alt='' class="paypal">
+						</div> <!-- .method -->
+						<div class="cardNumber">
+							<p class="title">Credit card number</p><br>
+							<input type="text" class="number">
+							<input type="text" class="number">
+							<input type="text" class="number">
+							<input type="text" class="number">							
+						</div> <!-- .cardNumber -->
+						<div class="cardHolderName">
+							<p class="title">Card holder name</p>
+							<input type="text">
+						</div> <!-- cardHolderName -->
+						<div class="expiration">
+							<p class="title">Expiration date</p>
+							<select>
+								<option>Month</option>
+								<option>01</option>
+								<option>02</option>
+								<option>03</option>
+							</select>
+							
+							<select>
+								<option>Year</option>
+								<option>2019</option>
+								<option>2020</option>
+								<option>2021</option>
+							</select>
+						</div> <!-- .expiration -->
+						<div class="security">
+							<p class="title">Security</p>
+							<input type="text">
+						</div><!-- .security -->
+						<button routerLink="" (click)="payment()">Checkout</button>
+					</div> <!-- .infos -->
+				</div> <!-- .content -->
+			</div> <!-- .payment -->
+		</div> <!-- .checkout -->
+	</div> <!-- .container2 -->
+</div> <!-- #wrapper -->

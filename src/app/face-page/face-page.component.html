@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="left">
+      <img src="{{face.image}}" alt="shoe">
+    </div>
+    <div class="right">
+      <div class="product-info">
+        <div class="product-name">
+            <div class="contain">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+            <h1 class="two lakme1">GLOSSY</h1>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="details">
+          <h3>Cosmatic Collection</h3>
+          <h2>{{face.name}}</h2>
+          <h4>&#8377;{{face.price}}</h4>
+          <h4 class="dis">&#8377;800</h4>
+        </div>
+        <ul>
+          <li class="color">Discount: {{face.discount}}</li>
+        </ul>
+      </div>
+      <div class="middle">
+        <button (click)="addToCart()" class="foot"><i class="fa fa-shopping-cart"></i>Add TO Cart</button>
+      </div>
+    </div>
+</div>

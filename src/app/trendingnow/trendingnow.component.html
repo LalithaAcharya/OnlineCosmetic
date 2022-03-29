@@ -1,0 +1,25 @@
+<div class="trending">
+	<div id="trendingslide">
+		<img class="one" src="http://cdn.shopify.com/s/files/1/0014/3514/0183/collections/new_arrivals.png?v=1606486343" width="100%" /> 
+		<img class="two" src="http://cdn.shopify.com/s/files/1/0014/3514/0183/collections/1169x511_f60a3ce5-9824-48a9-a2c8-636e7c5e6094.jpg?v=1635853516" />
+		<img class="three" src="http://cdn.shopify.com/s/files/1/0014/3514/0183/collections/24.png?v=1606462335"/>
+	</div>
+</div>
+
+<div class="productLayout">
+	<div class="layout" *ngFor="let trending of trending">
+	  <div class="card">
+		<div class="imgBx">
+		  <img class="image" src="{{trending.image}}">
+		</div>
+		<div class="contentBx">
+		  <h2>{{trending.name}}</h2>
+		  <p class="views">{{trending.discount}}</p>
+		  <div class="color">
+			<h3>Color : {{trending.color}}</h3>
+		  </div>
+		  <a routerLink="/trending/{{trending.id}}">View Product</a>
+		</div>
+	  </div>
+	</div>
+  </div>

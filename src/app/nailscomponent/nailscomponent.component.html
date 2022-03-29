@@ -1,0 +1,25 @@
+<div class="lips">
+    <div id="lipsslide">
+      <img class="one" src="http://cdn.shopify.com/s/files/1/0014/3514/0183/collections/24.png?v=1606462335" width="100%" /> 
+      <img class="two" src="https://images-static.nykaa.com/media/catalog/product/f/0/f09255229061_s5-8901030838583.jpg?tr=w-500,pr-true" />
+      <img class="three" src="https://s3-ap-southeast-1.amazonaws.com/lovely-news/og/b423b800-2924-42e7-8c80-e01d64483532/the-nail-colour-dilemma-complementing-your-skin-tone.jpg"/>
+    </div>
+  </div>
+
+<div class="productLayout">
+  <div class="layout" *ngFor="let nail of nails">
+    <div class="card">
+      <div class="imgBx">
+        <img class="image" src="{{nail.image}}">
+      </div>
+      <div class="contentBx">
+        <h2>{{nail.name}}</h2>
+        <p class="views">{{nail.discount}}</p>
+        <div class="color">
+          <h3>Color : {{nail.color}}</h3>
+        </div>
+        <a routerLink="/nail/{{nail.id}}">View Product</a>
+      </div>
+    </div>
+  </div>
+</div>

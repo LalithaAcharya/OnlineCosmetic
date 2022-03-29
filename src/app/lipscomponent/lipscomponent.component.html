@@ -1,0 +1,26 @@
+
+  <div class="lips">
+    <div id="lipsslide">
+      <img class="one" src="https://i.ytimg.com/vi/TKl5EEQad7o/maxresdefault.jpg" width="100%" /> 
+      <img class="two" src="https://www.brandinginasia.com/wp-content/uploads/2020/02/Lakme-Absulate-Branding-in-Asia.jpg" />
+      <img class="three" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Beauty/MayART/BrandDay/AMZMASLK0520283_1_N_3125X1563_8fbbce25-d55f-4742-a876-40ac133615ac.jpg"/>
+    </div>
+  </div>
+
+<div class="productLayout">
+  <div class="layout" *ngFor="let lip of lips">
+    <div class="card">
+      <div class="imgBx">
+        <img class="image" src="{{lip.image}}">
+      </div>
+      <div class="contentBx">
+        <h2>{{lip.name}}</h2>
+        <p class="views">{{lip.discount}}</p>
+        <div class="color">
+          <h3>Color : {{lip.color}}</h3>
+        </div>
+        <a routerLink="/lip/{{lip.id}}">View Product</a>
+      </div>
+    </div>
+  </div>
+</div>

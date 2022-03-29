@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading{
+    color: white;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-118px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    font-size:2em;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top:80px;
+}
+img{
+    height: 200px;
+    width: 196px;
+    margin-top: 2px;
+}
+.horz{
+    position: absolute;
+    margin-top: 5px;
+    width: 180px;
+    height: 2px;
+    background-color: gray;
+    right: 8px;
+}
+
+.circle{
+    position: relative;
+}
+.circle::after{
+    content: "sale!";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background-color: #e64602;
+    top: -10px;
+    left: -10px;
+    font-size: small;
+}
+.product1{
+    margin-right: 20px;
+    position: relative;
+    height: 280px;
+    width: 213px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border: solid #ddd 4px;
+}
+.product1:hover{
+    background-color: rgb(119, 24, 24);
+    width:223px;
+    height:285px;
+    
+}
+.para{
+    margin-top:15px;
+}
+.img1{
+    width:50%;
+    margin-left:400px;
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin-top:80px;
+}
+.img2{
+    height: 450px;
+    width: 396px;
+    margin-top: 2px;
+}
+.horz1{
+    position: absolute;
+    margin-top: 10px;
+    width: 367px;
+    height: 2px;
+    background-color: gray;
+    right: 10px;
+}
+.para1{
+    margin-top:25px;
+}
+.product2{
+    margin-right: 20px;
+    position: relative;
+    height: 550px;
+    width: 410px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border: solid #ddd 4px;
+}
+.product2:hover{
+    background-color: rgb(119, 24, 24);
+    
+}

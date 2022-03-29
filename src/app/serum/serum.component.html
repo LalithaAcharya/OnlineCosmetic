@@ -1,0 +1,26 @@
+<div class="lips">
+    <div id="lipsslide">
+      <img class="one" src="https://i.ytimg.com/vi/p0-A_Ku7P5E/maxresdefault.jpg" width="100%" /> 
+      <img class="two" src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/e63b74131898419.619e3a4fd34ff.jpg" />
+      <img class="three" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQutXsurhP-XLr_zXxOHaNkTqy0gaMKUPNNmNP3Ldc7TFz71fDQfAfQpKoWIEZmO_amMl4&usqp=CAU"/>
+    </div>
+  </div>
+
+<div class="productLayout">
+  <div class="layout" *ngFor="let serum of serum">
+    <div class="card">
+      <div class="imgBx">
+        <img class="image" src="{{serum.image}}">
+      </div>
+      <div class="contentBx">
+        <h2>{{serum.name}}</h2>
+        <p class="views">{{serum.discount}}</p>
+        <div class="color">
+          <h3>Color : {{serum.color}}</h3>
+        </div>
+        <a routerLink="/serum/{{serum.id}}">View Product</a>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,25 @@
+<div class="lips">
+    <div id="lipsslide">
+      <img class="one" src="https://www.biocospk.com/wp-content/uploads/2020/11/cosmetic-manufacturers-lahore.jpg" width="100%" /> 
+      <img class="two" src="http://nykaa.com/beauty-blog/wp-content/uploads/images/issue202/1The-Top-Ten-Lakme-Products-We-Love-Love-Love.jpg" />
+      <img class="three" src="https://tweshagetsbored.files.wordpress.com/2018/10/lakme-shade-range-india-tweshas-blog.jpg"/>
+    </div>
+  </div>
+
+<div class="productLayout">
+    <div class="layout" *ngFor="let face of faces">
+      <div class="card">
+        <div class="imgBx">
+          <img class="image" src="{{face.image}}">
+        </div>
+        <div class="contentBx">
+          <h2>{{face.name}}</h2>
+          <p class="views">{{face.discount}}</p>
+          <!-- <div class="color">
+            <h3>Color : {{face.color}}</h3>
+          </div> -->
+          <a routerLink="/face/{{face.id}}">VIEW MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>

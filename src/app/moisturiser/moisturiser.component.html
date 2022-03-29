@@ -1,0 +1,25 @@
+<div class="lips">
+    <div id="lipsslide">
+      <img class="one" src="https://static-bebeautiful-in.unileverservices.com/1200/900/Lakme%20Skin%20care%20Creme_MobileHomeFeature.jpg" width="100%" /> 
+      <img class="two" src="https://miro.medium.com/max/695/1*hnccUGeYGF-ENeTQrc_y2g.jpeg" />
+      <img class="three" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8V8eoNYIt9cI7h-XyoPuTO_vfU5v76x6wTYTVXHFwcHLi8YDi3cTbEBltKToiEs9hD_U&usqp=CAU"/>
+    </div>
+  </div>
+
+<div class="productLayout">
+  <div class="layout" *ngFor="let moisturizer of moisturizer">
+    <div class="card">
+      <div class="imgBx">
+        <img class="image" src="{{moisturizer.image}}">
+      </div>
+      <div class="contentBx">
+        <h2>{{moisturizer.name}}</h2>
+        <p class="views">{{moisturizer.discount}}</p>
+        <div class="color">
+          <h3>Color : {{moisturizer.color}}</h3>
+        </div>
+        <a routerLink="/moisturizer/{{moisturizer.id}}">View Product</a>
+      </div>
+    </div>
+  </div>
+</div>

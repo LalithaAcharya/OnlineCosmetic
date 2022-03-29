@@ -1,0 +1,26 @@
+<div class="lips">
+    <div id="lipsslide">
+      <img class="one" src="http://cdn.shopify.com/s/files/1/0014/3514/0183/collections/Mob_540xr_9f7fa796-1a30-443f-b5f6-15a8b4c4f669.jpg?v=1604942502" width="100%" /> 
+      <img class="two" src="https://beautyhealthtips.in/wp-content/uploads/2016/06/Best-sunscreens-lakme.jpg" />
+      <img class="three" src="https://i.ytimg.com/vi/gj_QyeHTBiI/hqdefault.jpg"/>
+    </div>
+  </div>
+
+<div class="productLayout">
+  <div class="layout" *ngFor="let sunscreen of sunscreen">
+    <div class="card">
+      <div class="imgBx">
+        <img class="image" src="{{sunscreen.image}}">
+      </div>
+      <div class="contentBx">
+        <h2>{{sunscreen.name}}</h2>
+        <p class="views">{{sunscreen.discount}}</p>
+        <div class="color">
+          <h3>Color : {{sunscreen.color}}</h3>
+        </div>
+        <a routerLink="/sunscreen/{{sunscreen.id}}">View Product</a>
+      </div>
+    </div>
+  </div>
+</div>
+

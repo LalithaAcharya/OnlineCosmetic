@@ -1,0 +1,81 @@
+<!-- <div class="background"></div>
+
+<div class="container">
+    <br>
+  <h2 style="color:white">Login</h2>
+  <form action="">
+
+    <div class="form-item">
+      <span style="color:white" class="material-icons-outlined">
+        account_circle
+      </span>
+      <input type="text" name="user" id="user" placeholder="Email or Username">
+    </div>
+
+    <div class="form-item">
+      <span style="color:white" class="material-icons-outlined">
+        lock
+      </span>
+      <input type="password" name="pass" id="pass" placeholder="password">
+    </div>
+
+    <button type="submit">LOGIN</button>
+
+    <p>Or Login Using</p>
+
+    <div class="options">
+      
+    </div>
+
+    <p style="color:white">New User ? <a style="color:blue" href="#"> Apply for an Account</a></p>
+
+  </form></div>  -->
+
+  <section>
+    <div class="background"></div>
+    <div id="container">
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+            <div formGroupName="userData">
+                <div class="form-item">
+                  <span style="color:white" class="material-icons-outlined">
+                    account_circle
+                  </span>
+                    <input type="text" id="name" class="form-control" formControlName="name" placeholder="Enter your full name">
+                    <span *ngIf="!signupForm.get('userData.name').valid && signupForm.get('userData.name').touched">
+                        Please enter a valid name
+                    </span>
+                </div>
+                <div class="form-item">
+                  <span style="color:white" class="material-icons-outlined">
+                    account_circle
+                  </span>
+                    <input type="text" id="email" class="form-control" formControlName="email" placeholder="Enter your email">
+                    <span *ngIf="!signupForm.get('userData.email').valid && signupForm.get('userData.email').touched">
+                        Please enter a valid email
+                    </span>
+                </div>
+                <div class="form-item">
+                   <span style="color:white" class="material-icons-outlined">
+                    account_circle
+                  </span>
+                    <input type="text" id="phonenumber" class="form-control" formControlName="phonenumber" placeholder="Enter your phone number">
+                    <span *ngIf="!signupForm.get('userData.phonenumber').valid && signupForm.get('userData.phonenumber').touched">
+                        Please enter a valid phonenumber
+                    </span>
+                </div>
+                <div class="form-item">
+                  <span style="color:white" class="material-icons-outlined">
+                    lock
+                  </span>
+                    <input type="text" id="password" class="form-control" formControlName="password" placeholder="Enter the password">
+                    <span *ngIf="!signupForm.get('userData.password').valid && signupForm.get('userData.password').touched">
+                        Please enter a valid password
+                    </span>
+                </div>
+                <div class="button">
+                    <button routerLink="" (click)="alertWithSuccess()"class="btn btn-warning" type="submit">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
